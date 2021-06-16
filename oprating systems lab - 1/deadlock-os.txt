@@ -1,0 +1,16 @@
+include <stdc++.h>
+using namespace std;
+int Resources(int process, int need)
+{
+    int minResources = 0;
+    minResources = process * (need - 1) + 1;
+  
+    return minResources;
+}
+int main()
+{
+    int process = 3, need = 4;
+  
+    cout << "R >= " << Resources(process, need);
+    return 0;
+}
